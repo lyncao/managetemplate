@@ -1,0 +1,114 @@
+$headerbg: #eef1f6;
+$topheight: 60px;
+$sidewidth: 180px;
+$sidewidth-small: 60px;
+$sidebg: #324157;
+$sidecolor: #bfcbd9;
+$sectionbg: #fff;
+$sideitemhover: #2d3a4e;
+header {
+  background: $headerbg;
+  height: $topheight;
+  color: #48576a;
+}
+
+.wapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.main {
+  height: calc(100% - #{$topheight});
+  width: 100%;
+  padding-left: $sidewidth;
+  box-sizing: border-box;
+}
+
+.main.hidebar {
+  padding-left: $sidewidth-small;
+}
+
+.hidebar .siderbar-box {
+  width: 60px;
+}
+
+.siderbar-box {
+  transition: width 0.28s ease-out;
+  width: $sidewidth;
+  height: 100%;
+  position: fixed;
+  top: $topheight;
+  bottom: 0;
+  left: 0;
+  z-index: 1001;
+  overflow-y: auto;
+  height: 100%;
+  background-color: $sidebg;
+  .el-menu-item:focus, .el-menu-item:hover, .el-submenu__title:hover {
+    background-color: $sideitemhover;
+  }
+  .sidebar, .el-menu {
+    background-color: $sidebg;
+    .el-menu-item, .el-submenu__title, a {
+      color: $sidecolor;
+    }
+  }
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  background: $sectionbg;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+  .page-title {
+    padding: 15px;
+  }
+  .toolbar {
+    margin: 15px 0
+  }
+  .page-footer {
+    margin: 15px 0;
+  }
+}
+
+.content-panel {
+  padding: 0 20px 20px;
+  .page-title {
+    border-bottom: 1px solid $sidebg;
+    margin: 10px 0;
+  }
+}
+
+.toolbar {
+  overflow: hidden;
+  .button-group {
+    float: left
+  }
+  .search-box {
+    float: right
+  }
+}
+
+.panel-box {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  .panel-item {
+    margin: 10px;
+  }
+}
+
+.el-tree {
+  background: none !important;
+}
+
+.login-box {
+  .login-info {
+    background: #edf2fc;
+    box-shadow: 0 0 20px #ddd;
+  }
+}
+

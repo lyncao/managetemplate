@@ -1,0 +1,38 @@
+.el-table::before {
+  height: 0
+}
+
+.logo {
+  background: url("../images/logo.png")  center no-repeat;
+  background-size: contain;
+  margin: 5px auto;
+}
+
+.header-content {
+  font-size: 24px;
+}
+
+header {
+  display: flex;
+  line-height: 60px;
+}
+
+.logo {
+  width: 180px;
+}
+
+.userinfo {
+  width: 220px;
+}
+
+.theme {
+  width: 100px;
+}
+
+.header-content {
+  flex: 1;
+}
+.logout{
+  margin-left: 10px;
+  font-size: 12px;
+}

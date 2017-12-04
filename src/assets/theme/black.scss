@@ -1,0 +1,151 @@
+.black {
+  $headerbg: #2f3638;
+  $headercolor: #fff;
+  $sidebg: #282d2f;
+  $sidecolor: #fff;
+  $sectionbg: #3a4144;
+  $panelbg: #4b5357;
+  $fontcolor: #fff;
+  $pagebg: #3f4649;
+  $pageactive: #167fa1;
+  $inborder: 1px solid rgba(255, 255, 255, 0.2);
+  $tdbtnbg: #7b878d;
+  $dialogbg: #424b4f;
+  .icon-handle-side {
+    background-image: repeating-linear-gradient(to right, rgba(255, 255, 255, 0), rgba(249, 249, 249, 0) 4px, #fff 4px, #fff 8px);
+  }
+  header {
+    background: $headerbg;
+    color: $headercolor;
+  }
+  section {
+    background: $sectionbg;
+    color: $fontcolor;
+  }
+  .el-dropdown {
+    color: $fontcolor;
+  }
+  .siderbar-box {
+    background-color: $sidebg;
+    .sidebar, .el-menu {
+      background-color: $sidebg;
+      .el-menu-item, .el-submenu__title, a {
+        color: $sidecolor;
+      }
+    }
+    .el-menu-item:focus, .el-menu-item:hover {
+      background-color: $pagebg;
+    }
+    .el-submenu__title:hover {
+      background-color: $pagebg;
+    }
+  }
+  .content-panel {
+    border: 1px solid $pagebg;
+    border-top: 2px solid $pagebg;
+    background: $panelbg;
+    color: $fontcolor;
+    .page-title {
+      border-bottom: 1px solid $pagebg;
+    }
+    .el-table tr {
+      background-color: $panelbg;
+      color: $fontcolor;
+      border: 0;
+    }
+    .el-table td, .el-table th.is-leaf {
+      border-bottom: 0;
+    }
+    .el-table tbody tr:nth-child(odd) {
+      background-color: $pagebg;
+    }
+    .el-table--enable-row-hover .el-table__body tr:hover > td {
+      background-color: $sidebg;
+    }
+    .el-pagination button.disabled,
+    .el-pagination .btn-next, .el-pagination .btn-prev,
+    .el-pager li {
+      color: $fontcolor;
+      background: $pagebg;
+    }
+    .el-pager li.active {
+      background: $pageactive;
+    }
+    .el-input__inner {
+      background-color: $panelbg;
+      border: $inborder;
+      color: $fontcolor;
+    }
+    .el-input-group__append, .el-input-group__prepend {
+      background-color: $panelbg;
+      color: $fontcolor;
+      border: $inborder;
+    }
+    .td-button {
+      border: 1px solid $tdbtnbg;
+      color: $fontcolor;
+      padding: 5px 10px;
+    }
+    .td-button:hover {
+      background: $tdbtnbg;
+    }
+
+    // 树
+    .el-tree {
+      color: $fontcolor;
+    }
+    .el-tree-node__content:hover {
+      background: $pagebg;
+    }
+    .el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content {
+      background: $pagebg;
+    }
+
+  }
+  .panel-item {
+    background: $sidebg;
+    margin-bottom: 20px;
+  }
+  // 弹出框
+  .el-dialog {
+    background: $dialogbg;
+  }
+  .el-dialog__title {
+    color: $fontcolor;
+  }
+  // 表单
+  .el-textarea__inner {
+    background-color: $panelbg;
+    color: $fontcolor;
+  }
+  .el-form-item__label, .el-radio__label, .el-checkbox__label {
+    color: $fontcolor;
+  }
+  .el-input__inner {
+    background-color: $panelbg;
+    color: $fontcolor;
+  }
+  // TAB
+  .el-tabs__item {
+    color: $fontcolor;
+  }
+  // 消息提醒
+  .el-message-box {
+    background: $dialogbg;
+    border-color: $pagebg;
+    .el-message-box__content, .el-message-box__title {
+      color: $fontcolor;
+    }
+  }
+  //登录
+  .login-box {
+    background: $sectionbg;
+    .login-info {
+      color: $fontcolor;
+      background: $sectionbg;
+      box-shadow: 2px 0 30px $sidebg;
+      border-radius: 6px;
+    }
+  }
+}
+
